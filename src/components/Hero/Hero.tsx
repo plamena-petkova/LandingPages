@@ -1,0 +1,37 @@
+import style from "../Hero/Hero.module.css";
+import preheading from "../../assets/preheading.svg";
+import heroPicture from "../../assets/heroPicture.svg";
+import foodService from "../../assets/foodService.svg";
+
+const Hero: React.FC = () => {
+  return (
+    <section className={style.container}>
+      <div>
+        <img src={preheading} alt="preheading" />
+        <div className={style.containerInfo}>
+          <h1 className={style.heading}>
+            Quickest <span className={style.redText}>Food Delivery</span> in
+            Town
+          </h1>
+          <h4 className={style.subheading}>
+            We will deliver food within 30 minutes in ypur town, if we would
+            fail we will give the food for free.
+          </h4>
+          <div className={style.buttonContainerPicture}>
+            <div className={style.buttonContainer}>
+              <button className={style.buttonOrder}>Order your food</button>
+              <button className={style.buttonHowTo}>How to order</button>
+            </div>
+            <img className={style.image} src={foodService} alt="foodService" />
+          </div>
+        </div>
+      </div>
+
+      <div className="">
+        <img src={heroPicture} alt="" />
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
