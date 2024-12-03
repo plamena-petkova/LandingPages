@@ -6,7 +6,7 @@ import foodService from "../../assets/foodService.svg";
 const Hero: React.FC = () => {
   return (
     <section className={style.container}>
-      <div>
+      <div className={style.leftPart}>
         <img src={preheading} alt="preheading" />
         <div className={style.containerInfo}>
           <h1 className={style.heading}>
@@ -22,13 +22,16 @@ const Hero: React.FC = () => {
               <button className={style.buttonOrder}>Order your food</button>
               <button className={style.buttonHowTo}>How to order</button>
             </div>
+        
             <img className={style.image} src={foodService} alt="foodService" />
+      
+           
           </div>
         </div>
       </div>
 
-      <div className="">
-        <img src={heroPicture} alt="" />
+      <div className={style.rightPart}>
+        <img src={heroPicture} alt="hero-pic" />
       </div>
     </section>
   );

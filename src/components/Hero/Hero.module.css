@@ -1,7 +1,7 @@
 .container {
-    display: flex;
-    flex-direction: row;
-
+    display: grid;
+    gap: 1rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
 }
 
 .containerInfo {
@@ -13,11 +13,12 @@
 .buttonContainer {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
  
 }
 
 .heading {
-    font-family: 'Playfair Display';
+font-family: 'Playfair Display';
 font-style: normal;
 font-weight: 900;
 color: #302F3C;
@@ -62,13 +63,16 @@ color: #302F3C;
     text-decoration: underline;
 }
 
-.image {
-    width: 30%; /* Make the image take full width */
-    height: auto; /* Maintain aspect ratio */
-}
 
 .buttonContainerPicture {
     display: flex;
     flex-direction: column;
    
+   
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    margin-left: -1.5rem;
 }
