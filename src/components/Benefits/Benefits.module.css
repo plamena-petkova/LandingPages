@@ -13,7 +13,7 @@
   border-bottom: 4px solid #f54748;
   border-right: 4px solid #f54748;
   transform: rotate(45deg);
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .textContainerBenefitsHeading {
@@ -28,7 +28,6 @@
 
 .textContainerBenefits {
   color: #f54748;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -49,6 +48,11 @@ ul {
   margin-top: 3rem;
 }
 
+ul > li >p {
+  padding: 0;
+  margin: 0;
+}
+
 .listItem {
   display: flex;
   flex-direction: row;
@@ -60,6 +64,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
 }
 
 @media (max-width: 768px) {
