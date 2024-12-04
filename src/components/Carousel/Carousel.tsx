@@ -18,62 +18,58 @@ function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
    
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev + 1) % slides.length);
-      };
-    
-      const handlePrev = () => {
-        setCurrentIndex((prev) =>
-          prev === 0 ? slides.length - 1 : prev - 1
-        );
-      };
-
-
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
+    };
+  
+    const handlePrev = () => {
+      setCurrentIndex((prev) =>
+        prev === 0 ? slides.length - 1 : prev - 1
+      );
+    };
+  
     return (
-        <div className={styles.carousel}>
-          <div className={styles.track}>
-            {slides.map((slide, index) => {
-                console.log('Slide', slide.image);
-              // Determine position based on index
-              const isActive = index === currentIndex;
-              const isPrev =
-                index === (currentIndex - 1 + slides.length) % slides.length;
-              const isNext = index === (currentIndex + 1) % slides.length;
-    
-              // Apply appropriate class
-              
-              const positionClass = isActive
-                ? styles.active
-                : isPrev
-                ? styles.prev
-                : isNext
-                ? styles.next
-                : styles.hidden;
-             
-
-              return (
-                <div
-                  className={`${styles.carouselCard} ${positionClass}`} //
-                  key={index}
-                >
-                  <img src={slide.image} alt={slide.title} />
-                 
-                </div>
-              );
-            })}
-          </div>
-          <button
-            className={`${styles.carouselControl} ${styles.prevControl}`}
-            onClick={handlePrev}
-          >
-            ‹
-          </button>
-          <button
-            className={`${styles.carouselControl} ${styles.nextControl}`}
-            onClick={handleNext}
-          >
-            ›
-          </button>
+      <div className={styles.carousel}>
+        <div className={styles.cardsContainer}>
+        <div className="bg-violet-600">What</div>
+          {slides.map((slide, index) => {
+            // Determine the positioning based on index
+            const isActive = index === currentIndex;
+            const isBehind =
+              index === (currentIndex - 1 + slides.length) % slides.length ||
+              index === (currentIndex + 1) % slides.length;
+  
+            // Apply the correct class
+            const positionClass = isActive
+              ? styles.active
+              : isBehind
+              ? styles.behind
+              : styles.hidden;
+  
+            return (
+              <div
+                className={`${styles.carouselCard} ${positionClass}`}
+                key={index}
+              >
+                <img src={slide.image} alt={slide.title} />
+              </div>
+            );
+          })}
         </div>
+        <button
+          className={`${styles.carouselControl} ${styles.prevControl}`}
+          onClick={handlePrev}
+        >
+          ‹
+        </button>
+        <button
+          className={`${styles.carouselControl} ${styles.nextControl}`}
+          onClick={handleNext}
+        >
+          ›
+        </button>
+      
+      </div>
+      
       );
 }
 
