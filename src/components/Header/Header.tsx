@@ -2,6 +2,7 @@
 import styles from './Header.module.css'
 import logo from "../../assets/logo.svg"
 import cart from "../../assets/cart.svg"
+import RedButton from '../RedButton/RedButton'
 
 const Header: React.FC = () => {
     
@@ -20,7 +21,7 @@ const Header: React.FC = () => {
 
                 <div className={styles.actionButtons}>
                     <ul><button className={styles.actionBtn}><img src={cart} alt="cart"></img></button></ul>
-                    <ul><button className={styles.signUpBtn}>Sign Up &rarr;</button></ul>
+                    <ul><RedButton captions='Sign Up &rarr;' /></ul>
                 </div>
      
         </section>

@@ -2,6 +2,7 @@ import style from "../Hero/Hero.module.css";
 import preheading from "../../assets/preheading.svg";
 import heroPicture from "../../assets/heroPicture.svg";
 import foodService from "../../assets/foodService.svg";
+import RedButton from "../RedButton/RedButton";
 
 const Hero: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const Hero: React.FC = () => {
           </h4>
           <div className={style.buttonContainerPicture}>
             <div className={style.buttonContainer}>
-              <button className={style.buttonOrder}>Order your food</button>
+              <RedButton captions="Order your food" />
               <button className={style.buttonHowTo}>How to order</button>
             </div>
         

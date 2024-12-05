@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  justify-items : center;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+  margin-top: 50px;
+}
+
+.feedbackNumbers {
+  color: #f54748;
+  font-size: 40px;
+  margin: 10px 0;
+
+}
+
+.textContainerPromoHeading {
+  width: 70%;
+  color: #1d1d1f;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.textContainerPromoHeading::before {
+    position: absolute;
+    content: url("E:\Landing_Pages\LandingPages\src\assets\beforeBenefits.svg");
+    width: 45px;
+    height: 45px;
+    transform: translate(-100%, 20%);
+    z-index: -100;
+  }
+
+.textContainerPromo {
+  color: #f54748;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+
+.feedbackContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  color: #1d1d1f;
+  list-style: none;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+li > p {
+font-size: 13px;
+color: #1D1D1F;
+opacity: 0.65;
+}
+
+.redButtonContainer {
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -37,20 +37,8 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 color: #302F3C;
-
-
 }
 
-.buttonOrder {
-    cursor: pointer;
-    padding: 1rem 1.5rem;
-    background: #f54748;
-    border-radius: 19px;
-    border: white;
-    color: white;
-    font-weight: 600;
-    margin-right: 2rem;
-}
 
 .buttonHowTo {
     cursor: pointer;

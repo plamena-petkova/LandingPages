@@ -59,13 +59,4 @@
   cursor: pointer;
 }
 
-.signUpBtn {
-  cursor: pointer;
-  padding: 1rem 1.5rem;
-  background: #f54748;
-  box-shadow: 0px 22px 40px rgba(245, 71, 72, 0.19);
-  border-radius: 19px;
-  border: white;
-  color: white;
-  font-weight: 600;
-}
+
