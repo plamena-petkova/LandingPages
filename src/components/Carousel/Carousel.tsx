@@ -30,7 +30,6 @@ function Carousel() {
     return (
       <div className={styles.carousel}>
         <div className={styles.cardsContainer}>
-        <div className="bg-violet-600">What</div>
           {slides.map((slide, index) => {
             // Determine the positioning based on index
             const isActive = index === currentIndex;
@@ -38,7 +37,6 @@ function Carousel() {
               index === (currentIndex - 1 + slides.length) % slides.length ||
               index === (currentIndex + 1) % slides.length;
   
-            // Apply the correct class
             const positionClass = isActive
               ? styles.active
               : isBehind
