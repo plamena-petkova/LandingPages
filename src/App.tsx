@@ -2,6 +2,7 @@
 
 import './App.css'
 import Benefits from './components/Benefits/Benefits'
+import EmailForm from './components/EmailForm/Email'
 import Features from './components/Features/Features'
 import Feedback from './components/Feedback/Feedback'
 import Header from './components/Header/Header'
@@ -23,6 +24,7 @@ function App() {
       <Trending />
       <Promo />
       <Feedback />
+      <EmailForm />
     </>
   )
 }

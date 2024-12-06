@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% + 9.5rem); /* Adjust for the 4rem left and right margin */
+    background-color:#F14745;
+    margin: 0rem -5rem 0 -5rem; /* Negative margin cancels out body margin */
+    align-items: center;
+  }
+
+.imageContainer {
+  padding: 2rem 7rem;
+}
+
+.textContainer {
+  max-width: 70%;
+}
+
+.heading {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+color: #FFFFFF;
+}
+
+.subheading {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.emailInput {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 60%;
+}
+
+.blackButton {
+padding: 1rem 2rem;
+gap: 10px;
+border: none;
+background: #222224;
+border-radius: 8px;
+color: white;
+}
+
