@@ -5,6 +5,7 @@ import Benefits from './components/Benefits/Benefits'
 import EmailForm from './components/EmailForm/Email'
 import Features from './components/Features/Features'
 import Feedback from './components/Feedback/Feedback'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import Promo from './components/Promo/Promo'
@@ -25,6 +26,7 @@ function App() {
       <Promo />
       <Feedback />
       <EmailForm />
+      <Footer />
     </>
   )
 }
